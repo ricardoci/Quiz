@@ -13,6 +13,10 @@ body{
 
 }
 
+/*start of score menu*/
+.box{
+    display: none;
+}
 .welcomeBox{
    
     background: linear-gradient(#f35058,#1a1a1a);
@@ -23,7 +27,7 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 5rem;
-   
+    
     
 
 }
@@ -93,7 +97,10 @@ button{
 button:hover{
     border-style: solid;
 }
+/* end of score menu */
 
+
+/*Started Quiz */
 /* new box  */
 .quizBox{
     background: linear-gradient(#f35058,#1a1a1a);
@@ -101,6 +108,7 @@ button:hover{
     width: 30rem;
     border-radius: 50px;
     margin: auto;
+    display: none;
     
     margin-top: 5rem;
     
@@ -153,28 +161,166 @@ button:hover{
     justify-content: center;
     font-size: 24px;
     margin:4rem;
+    
 
 }
 .questionsNum h1{
     font-size: 18px;
     display: flex;
     justify-content: center;
-    margin:2rem;
+    margin:1rem;
 }
 .questionsNum span{
     font-size: 32px;
     display: flex;
     justify-content: center;
-    margin:2rem;
+    margin:1rem;
 
 }
 .options{
-    font-size: 42px;
-    position: absolute;
-    margin: 0 auto;
+    font-size: 15px;
+    
+   
+}
+.options .answers #answer{
    
     
     
+    word-break: break-all;
+    white-space: pre-wrap;
+   
+    cursor: pointer;
+    border-style: solid;
+    border-radius: 50px;
+    padding: 1rem;
+    margin: 5px;
     
+  
+}
+.options .answers #answer:hover{
+    background-color: #faebd7;
+
+}
+.quitQuiz{
+    
+    align-items: center;
+     justify-content: center;
+     display: flex;
+     margin: auto;
+     text-align: center;
+     
+     
+}
+.exit{
+    
+    margin:1rem;
+    display: flex;
+    justify-content: center;
+    
+   
+ 
+    
+
+}
+
+
+
+
+
+/* end of quiz  */
+
+/* score input*/
+.welcomeBox2{
+   
+    background: linear-gradient(#f35058,#1a1a1a);
+    height: 15rem;
+    width: 30rem;
+    border-radius: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    
+    
+
+}
+.welcomeBox2:hover{
+    border-style: solid;
+
+}
+.welcome2{
+    margin:0;
+    padding:0;
+    position: absolute;
+}
+
+.welcomeBox2 h1{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-size: 24px;
+    margin-top: 1rem;
+    
+    
+    
+}
+
+.welcomeInfo2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    
+}
+.info2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.playQuiz2{
+position: relative;
+align-items: center;
+    display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 15rem;
+     
+
+}
+
+.t2{
+    position: absolute;
+    bottom:0%;
+    
+
+}
+
+button{
+    width:8rem;
+    height: 2.5rem;
+    border-radius: 50px;
+    background: linear-gradient(#f35058,#1a1a1a);
+    font-size: 18px;
+    border-style: none;
+    cursor: pointer;
+    margin: 1rem;
+    
+
+}
+button:hover{
+    border-style: solid;
+}
+
+.scoreInput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:5rem;
+}
+.scoreInput input{
+    height:2.5rem;
 
 }
