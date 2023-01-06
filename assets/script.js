@@ -2,9 +2,10 @@
 var playbutton = $('#play-button');
 var quizbox = $('.quizBox');
 var box = $('.box')
+var box2 = $('.box2')
 var exitButton = $('#exitButton')
 var nextQuestion = $('#nextQuestion')
-
+let question = $('.question');
 
 
 
@@ -16,7 +17,7 @@ var questions = [{
     numb: 1,
     question: "what is html?",
     answer: "yes",
-    options: [ "1", "no","no","1"]
+    options: [ "1", "no","no","yes"]
 },
 
 
@@ -35,10 +36,60 @@ var questions = [{
     answer: "yes",
     options: [ "3", "no","no","3"]
 
-
+},
+   
+{   numb: 4,
+        question: "what is version control?",
+        answer: "yes",
+        options: [ "4", "no","no","4"]
     
+    
+    
+},  
+{   numb: 5,
+        question: "what is code?",
+        answer: "yes",
+        options: [ "5", "no","no","5"]
+    
+}, 
+{   numb: 6,
+    question: "what is code?",
+    answer: "yes",
+    options: [ "5", "no","no","5"]
+
+}, 
+{   numb: 7,
+    question: "what is code?",
+    answer: "yes",
+    options: [ "5", "no","no","5"]
+
+}, 
+{   numb: 8,
+    question: "what is code?",
+    answer: "yes",
+    options: [ "5", "no","no","5"]
+
+}, 
+{   numb: 9,
+    question: "what is code?",
+    answer: "yes",
+    options: [ "5", "no","no","5"]
+
+}, 
+{   numb: 10,
+    question: "wha?",
+    answer: "yes",
+    options: [ "5", "no","no","5"]
+
+ 
+    
+    
+  
+       
 
 }];
+
+
 
 
 
@@ -49,7 +100,7 @@ var questions = [{
 
 // jquery adding questions 
 
-var question = $('.question');
+ question = $('.question');
 question.children('span').text(questions[0].question);
 
 // jquery adding the number question you are on
@@ -101,9 +152,19 @@ quizbox.css('display', "none ")
 
     }  
 });
+// stops quiz at question 10.hides quiz and presents you with your score
+nextQuestion.on('click', function(){
+
+    if( index === 10  ){
+
+        
+        box2.css('display', "block")
+        quizbox.css('display', "none ")
+    } 
+});
 
 // next button
-var index = 1;
+let index = 1;
 
 
 
@@ -114,7 +175,7 @@ nextQuestion.on('click', function(){
     if(nextQuestion){
        
        
-        var question = $('.question');
+        
         question.children('span').text(questions[index].question);
 
         var questionsNum = $('.questionsNum');
@@ -135,14 +196,27 @@ nextQuestion.on('click', function(){
         var answers = $('.answers');
         answers.children('option').children('h4').text(questions[index].options[3]);
 
-        
+       
+
+       
+     console.log(questions[index].numb )
+     console.log(index)
 
     }  
-    // adds 1 to the index
-    if(question.length === index){
+    // adds 1 to the index, if question.length === index is false, next button will not add
+    if( questions[index].numb < 11){
         index++;
-        console.log(index)
+        
+        console.log('dkdk')
     }
+   
+   
+
+  
+   
+
+   
+    
    
     
 });
