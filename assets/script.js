@@ -111,6 +111,8 @@ const Questions = [{
 
 ]
 
+
+
 var start = true;
   
 // Iterate
@@ -204,12 +206,72 @@ next.addEventListener("click", () => {
         
             id++
             questionsNum.children('h1').children('p').text(id);
-      
-        
-        
+    
         iterate(id);
         console.log(id);
     }
   
 })
 
+function createProgressbar(id, duration, callback) {
+    // We select the div that we want to turn into a progressbar
+    var timeBar = document.getElementById(id);
+    timeBar.className = 'timeBar';
+  
+    // We create the div that changes width to show progress
+    var timeBarinner = document.createElement('div');
+    timeBarinner.className = 'inner';
+  
+    // Now we set the animation parameters
+    timeBarinner.style.animationDuration = duration;
+  
+    // Eventually couple a callback
+    if (typeof(callback) === 'function') {
+        timeBarinner.addEventListener('animationend', callback);
+    }
+  
+    // Append the progressbar to the main progressbardiv
+    timeBar.appendChild(timeBarinner);
+  
+    // When everything is set up we start the animation
+    timeBarinner.style.animationPlayState = 'running';
+  }
+  
+
+
+  
+function starttime(){
+  addEventListener('load', function() {
+
+   
+   
+   
+    
+
+    createProgressbar('timeBar', '5s', function() {
+        if(timeBar){
+        clicked = true;
+            gameOver.text('Game Over!!!!');
+            
+            
+            
+        }
+      
+    });
+    
+  });
+
+
+}
+
+
+function a(){
+    box.css( 'display',  'none') ;
+
+    quizBox.css( 'display',  'block') ;
+
+}
+var gameOver = $('.gameOver')
+var box = $('#box')
+var quizBox = $('#quizBox')
+var play = $('#play-button')

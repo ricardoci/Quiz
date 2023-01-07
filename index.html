@@ -37,7 +37,7 @@
     <div class="playQuiz">
     
         <div class="t">
-        <button onclick="startQuiz()"   id="play-button">Play Game</button>
+        <button onclick="a()"   id="play-button">Play Game</button>
     </div>
 
     </div>
@@ -50,10 +50,10 @@
 <!-- quiz UI -->
 
 <div  id="quizWrapper">
-<div   id="quizBox" >
+<div   id="quizBox" class="quizBox">
     <div class="title">
         <h1>Quiz</h1>
-        <div class="timer"><div class="timeBar"></div><img src="assets/img/clock-regular.svg" alt=""></div>
+        <div class="timer"><div id="timeBar"></div><img src="assets/img/clock-regular.svg" alt=""></div>
     </div>
 
 
@@ -62,7 +62,7 @@
 
         <h1>   Questions <p>1</p>/10</h1> 
         <div class="question" > </div>
-           <div id="result" ><span>What is Git?</span></div> 
+           <div id="result" class="gameOver" ><span>What is Git?</span></div> 
        
         <div class="options">
             <div   class="answers">

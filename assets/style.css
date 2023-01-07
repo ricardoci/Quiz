@@ -15,7 +15,7 @@ body{
 
 /*start of score menu*/
 #box{
-    display: none;
+    
    
     
     
@@ -115,10 +115,8 @@ button:hover{
     width: 30rem;
     border-radius: 50px;
     margin: auto;
+    display: none;
    
-    
-    
-    
     margin-top: 5rem;
     
 
@@ -181,15 +179,7 @@ button:hover{
     
     
 }
-.timeBar{
-    height:40px;
-    width:10rem;
-   
-    background: linear-gradient(#1a1a1a,#EE8E6B);
-    
-    border-radius:  50px;
 
-}
 .questionWrap{
     display: flex;
     justify-content: center;
@@ -353,3 +343,33 @@ button:hover{
     border-style: solid;
 }
 
+#timeBar {
+    width: 100%;
+    
+    
+  }
+  #timeBar .inner {
+    border-radius: 50px;
+    height: 40px;
+    animation: progressbar-countdown;
+    /* Placeholder, this will be updated using javascript */
+    animation-duration: 40s;
+    /* We stop in the end */
+    animation-iteration-count: 1;
+    /* Stay on pause when the animation is finished finished */
+    animation-fill-mode: forwards;
+    /* We start paused, we start the animation using javascript */
+    animation-play-state: paused;
+    /* We want a linear animation, ease-out is standard */
+    animation-timing-function: linear;
+  }
+  @keyframes progressbar-countdown {
+    0% {
+      width: 100%;
+      background: #0F0;
+    }
+    100% {
+      width: 0%;
+      background: #F00;
+    }
+  }
