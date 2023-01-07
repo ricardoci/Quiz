@@ -263,10 +263,11 @@ function starttime(){
 
 
 }
+starttime()
 
 
 function a(){
-    box.css( 'display',  'none') ;
+     box.css( 'display',  'none') ;
 
     quizBox.css( 'display',  'block') ;
 
