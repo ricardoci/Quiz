@@ -10,7 +10,7 @@
 
     <!-- Welcome Menu -->
     <div class="scoreMenu">
-<div class="box">
+<div id="box"   class="boxWrapper">
     <div class="text"></div>
     
     <div class="welcomeBox">
@@ -37,7 +37,7 @@
     <div class="playQuiz">
     
         <div class="t">
-        <button id="play-button">Play Game</button>
+        <button onclick="startQuiz()"   id="play-button">Play Game</button>
     </div>
 
     </div>
@@ -49,8 +49,8 @@
 
 <!-- quiz UI -->
 
-<div class="quizWrapper">
-<div class="quizBox">
+<div  id="quizWrapper">
+<div   id="quizBox" >
     <div class="title">
         <h1>Quiz</h1>
         <div class="timer"><div class="timeBar"></div><img src="assets/img/clock-regular.svg" alt=""></div>
@@ -60,22 +60,22 @@
     <div class="questionWrap">
     <div class="questionsNum">
 
-        <h1>   Questions <p>3</p>/10</h1> 
-        <div class="question">
-            <span>What is Git?</span>
-        </div>
+        <h1>   Questions <p>1</p>/10</h1> 
+        <div class="question" > </div>
+           <div id="result" ><span>What is Git?</span></div> 
+       
         <div class="options">
-            <div class="answers">
-                 <option id="answer" value="1"> 1.  <h1> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1></option>
-                <option id="answer" value="2"> 2. <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2></option>
-                <option id="answer" value="3"> 3. <h3> Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3></option>
-                <option id="answer" value="4">4. <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4></option>
+            <div   class="answers">
+                 <button class="option" id="op1" onclick="" > 1.  </button>
+                <button   class="option" id="op2" > 2. </button>
+                <button class="option" id="op3" > 3. </button>
+                <button  class="option" id="op4"  >4. </button>
 
 
                 <div class="quitQuiz">
                     <div class="exit">
-                        <button id="exitButton">Quit Game</button>
-                        <button id="nextQuestion">Next</button>
+                        <button  class="exitButton">Check</button>
+                        <button    class="nextQuestion">Next</button>
                         
                     </div>
                    
@@ -96,7 +96,7 @@
 
 
 <div class="scoreMenu2">
-    <div class="box2">
+    <div class="hide" id="box2">
         <div class="text2"></div>
         
         <div class="welcomeBox2">

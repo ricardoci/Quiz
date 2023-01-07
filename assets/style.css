@@ -14,7 +14,8 @@ body{
 }
 
 /*start of score menu*/
-.box{
+#box{
+    display: none;
    
     
     
@@ -91,7 +92,7 @@ button{
     width:8rem;
     height: 2.5rem;
     border-radius: 50px;
-    background: linear-gradient(#f35058,#1a1a1a);
+    
     font-size: 18px;
     border-style: none;
     cursor: pointer;
@@ -100,26 +101,54 @@ button{
 }
 button:hover{
     border-style: solid;
+    
 }
+
 /* end of score menu */
 
 
 /*Started Quiz */
 /* new box  */
-.quizBox{
+#quizBox{
     background: linear-gradient(#f35058,#1a1a1a);
     height: 40rem;
     width: 30rem;
     border-radius: 50px;
     margin: auto;
-    display: none;
+   
+    
     
     
     margin-top: 5rem;
     
 
 }
-.quizBox .title{
+.option{
+    justify-content: center;
+    align-items: center;
+    display: block;
+    width: 94%;
+    margin: auto;
+    margin: 12px;
+    
+    
+}
+.options .answer .option:hover{
+   
+    background-color: #faebd7;
+
+}
+#result{
+    text-align: center;
+}
+
+.question{
+    border-radius: 50px;
+    text-align: center;
+    margin:1rem;
+}
+
+#quizBox .title{
     display: flex;
     justify-content: center;
     margin:1rem;
@@ -235,7 +264,7 @@ button:hover{
 /* end of quiz  */
 
 /* score input*/
-.box2{
+#box2{
     display: none;
 }
 .welcomeBox2{
