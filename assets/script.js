@@ -248,9 +248,11 @@ function starttime(){
    
     
 
-    createProgressbar('timeBar', '5s', function() {
+    createProgressbar('timeBar', '1s', function() {
         if(timeBar){
-        clicked = true;
+
+
+       
             gameOver.text('Game Over!!!!');
             
             
@@ -272,7 +274,23 @@ function a(){
     quizBox.css( 'display',  'block') ;
 
 }
+
+
+function b(){
+
+    
+    box.css( 'display',  'none') ;
+    box2.css( 'display',  'block') ;
+
+    quizBox.css( 'display',  'none') ;
+   
+    
+}
+
+
+
 var gameOver = $('.gameOver')
 var box = $('#box')
+var box2 = $('#box2')
 var quizBox = $('#quizBox')
 var play = $('#play-button')

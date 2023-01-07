@@ -246,6 +246,12 @@ button:hover{
     
 
 }
+.n{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:  7rem ;
+}
 
 
 
@@ -256,6 +262,7 @@ button:hover{
 /* score input*/
 #box2{
     display: none;
+    
 }
 .welcomeBox2{
    
