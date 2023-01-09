@@ -1,109 +1,109 @@
 const Questions = [{
     id: 0,
     q: "What is html?",
-    a: [{ text: "makr u", isCorrect: false },
-        { text: "Surat", isCorrect: false },
-        { text: "Delhi", isCorrect: true },
-        { text: "mumbai", isCorrect: false }
+    a: [{ text: "How TO Make Language", isCorrect: false },
+        { text: "Hero Text More Length", isCorrect: false },
+        { text: "Hyper Text Markup Languange", isCorrect: true },
+        { text: "Hyper Text Mockup Language", isCorrect: false }
     ]
 
 },
 {
     id: 1,
     q: "What is css?",
-    a: [{ text: "Lampang", isCorrect: false, isSelected: false },
-        { text: "phuket", isCorrect: false },
-        { text: "Ayutthaya", isCorrect: false },
-        { text: "Bangkok", isCorrect: true }
+    a: [{ text: "Cascadeing Style Sheets", isCorrect: true, isSelected: false },
+        { text: "Current Styling Source", isCorrect: false },
+        { text: "Correct Styling Sheets", isCorrect: false },
+        { text: "Cascadeing Strong Style", isCorrect: false }
     ]
 
 },
 {
     id: 2,
     q: "What is javascript?",
-    a: [{ text: "surat", isCorrect: false },
-        { text: "vadodara", isCorrect: false },
-        { text: "gandhinagar", isCorrect: true },
-        { text: "rajkot", isCorrect: false }
+    a: [{ text: "A value that can either be True or False", isCorrect: false },
+        { text: "Cool", isCorrect: false },
+        { text: "Object-oriented computer programing language", isCorrect: true },
+        { text: "Store multiple values in a single variable", isCorrect: false }
     ]
 
 },
 {
     id: 3,
     q: "What is an object?",
-    a: [{ text: "surat", isCorrect: false },
-        { text: "vadodara", isCorrect: false },
-        { text: "gandhinagar", isCorrect: true },
-        { text: "rajkot", isCorrect: false }
+    a: [{ text: "Current Styling Source", isCorrect: false },
+        { text: "Object-oriented computer programing language", isCorrect: false },
+        { text: "A collection of propeties.", isCorrect: true },
+        { text: "A value that can either be True or False", isCorrect: false }
     ]
 
 },
 {
     id: 4,
     q: "What is array?",
-    a: [{ text: "surat", isCorrect: false },
-        { text: "vadodara", isCorrect: false },
-        { text: "gandhinagar", isCorrect: true },
-        { text: "rajkot", isCorrect: false }
+    a: [{ text: "Represents the rendered text content of a node and its descendants.", isCorrect: false },
+        { text: "A column of boxes", isCorrect: false },
+        { text: "A value that can either be True or False", isCorrect: false },
+        { text: "Store multiple values in a single variable", isCorrect: true }
     ]
 
 },
 {
     id: 5,
     q: "What is boolean?",
-    a: [{ text: "surat", isCorrect: false },
-        { text: "vadodara", isCorrect: false },
-        { text: "gandhinagar", isCorrect: true },
-        { text: "rajkot", isCorrect: false }
+    a: [{ text: "A value that can either be True or False", isCorrect: true },
+        { text: "Represents the rendered text content of a node and its descendants.", isCorrect: false },
+        { text: "Store multiple values in a single variable", isCorrect: false },
+        { text: "A standard convention for accessing and manipulating elements within HTML and XML documents", isCorrect: false }
     ]
 
 },
 {
     id: 6,
     q: "What is local storage?",
-    a: [{ text: "surat", isCorrect: false },
-        { text: "vadodara", isCorrect: false },
-        { text: "gandhinagar", isCorrect: true },
-        { text: "rajkot", isCorrect: false }
+    a: [{ text: "Actions that can be performed on objects", isCorrect: false },
+        { text: "A data storage type of web storage.", isCorrect: true },
+        { text: "A name of of storage location.", isCorrect: false },
+        { text: "Correct Styling Sheets", isCorrect: false }
     ]
 
 },
 {
     id: 7,
     q: "What is innertext?",
-    a: [{ text: "surat", isCorrect: false },
-        { text: "vadodara", isCorrect: false },
-        { text: "gandhinagar", isCorrect: true },
-        { text: "rajkot", isCorrect: false }
+    a: [{ text: "High level Pragramming language", isCorrect: false },
+        { text: "The text content of the element.", isCorrect: false },
+        { text: "The rendered text content of a node and its descendants.", isCorrect: true },
+        { text: "Object-oriented computer programing language", isCorrect: false }
     ]
 
 },{
     id: 8,
     q: "What is a function?",
-    a: [{ text: "surat", isCorrect: false },
-        { text: "vadodara", isCorrect: false },
-        { text: "gandhinagar", isCorrect: true },
-        { text: "rajkot", isCorrect: false }
+    a: [{ text: "A standard convention for accessing and manipulating elements within HTML and XML documents", isCorrect: false },
+        { text: "A procedure in JavaScript that waits for an event to occur.", isCorrect: false },
+        { text: "A name of of storage location.", isCorrect: false },
+        { text: "None of the above", isCorrect: true }
     ]
 
 },
 {
     id: 9,
     q: "what is a method?",
-    a: [{ text: "surat", isCorrect: false },
-        { text: "vadodara", isCorrect: false },
-        { text: "gandhinagar", isCorrect: true },
-        { text: "rajkot", isCorrect: false }
+    a: [{ text: "actions that can be performed on objects", isCorrect: true },
+        { text: "Store multiple values in a single variable", isCorrect: false },
+        { text: "A standard convention for accessing and manipulating elements within HTML and XML documents", isCorrect: false },
+        { text: "Actions that can be performed on objects", isCorrect: false }
     ]
 
 },
 {
     id: 10,
     q: "what bootstrap?",
-    a: [{ text: "surat", isCorrect: false },
-        { text: "vadodara", isCorrect: false },
-        { text: "gandhinagar", isCorrect: true },
-        { text: "rajkot", isCorrect: false }
+    a: [{ text: "The text content of the element", isCorrect: false },
+        { text: "A boot brand.", isCorrect: false },
+        { text: "food", isCorrect: false },
+        { text: "A framework", isCorrect: true }
     ]
 
 }
@@ -248,7 +248,7 @@ function starttime(){
    
     
 
-    createProgressbar('timeBar', '1s', function() {
+    createProgressbar('timeBar', '30s', function() {
         if(timeBar){
 
 
@@ -287,10 +287,17 @@ function b(){
     
 }
 
+function playAgain(){
+    box.css( 'display',  'block') ;
+    box2.css( 'display',  'none') ;
 
+    quizBox.css( 'display',  'none') ;
+
+}
 
 var gameOver = $('.gameOver')
 var box = $('#box')
 var box2 = $('#box2')
 var quizBox = $('#quizBox')
 var play = $('#play-button')
+var play = $('.playAgain')
