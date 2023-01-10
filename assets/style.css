@@ -336,10 +336,10 @@ align-items: center;
 
 button{
     width:8rem;
-    height: 2.5rem;
+    height: 3rem;
     border-radius: 50px;
     background: linear-gradient(#f35058,#1a1a1a);
-    font-size: 18px;
+    font-size: 15px;
     border-style: none;
     cursor: pointer;
     margin: 1rem;
